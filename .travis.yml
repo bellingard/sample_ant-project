@@ -2,14 +2,11 @@
 dist: trusty
 sudo: required
 
-node_js:
-  - 6
-
 addons:
   sonarcloud:
     organization: fab
     token:
-      secure: "foo"
+      secure: "Xfxn26AZaak72Yw6Sb1ToUBmlZOnls0lzwmAhA8rFVg9YDFUc1J++H8u3eeSy4dm4gk+r1KbXSaMBUHKha3RRw+4Me6uUCZY2Pr7BdzN/eLXVXUdZp7dKuMl3aC7WBaoxfAKl09aCNFIJ/WHLvd9p0B1mRs93JBAmoRxl5CaabrnF9KPxEW1KB9OI/AT9IJiaTUv5fnCEN+PHYVgCHE8J1Q31MlmC9Y8TmBobrg/vbU75bZ00Tvq1Oi7jvz7f+p2KDwt3Q7Jg5EwpaJpQrESilU0+h+uza5L0P8FYTXpkJ6CRlTCppjLnNL3UbOoKv5CV3E6PU6lC4blHIgp50dfu92to9+L/mNGFX6byAxr8gXayeKTIxl9h9UGAyzhL4911di5soY41/FJUz3UA6O9d0DsZPu8YKKxWCLnigt1UrjNfwqYm7x/FDJ+DWq76l8GBW+mICHwfjjd5IctPQ2V/juIWY3SLGiTZjTtlWCD26BScpWNrXhQshRKn47UOjm5Hlg6281iPwLPOZwkjUWjJUX23NXnx7h6VzcwX2z36DGI7T1OEDaMlk/L2P8jmlwhp3zMFtrnZ1KdhtzdeulDuMTkgmPztMv3ZJ6K9XCQ62k6GVVk8uE83S/WPVb5xh1GlHXKFWv60YQa3YjF40wnsF6HJB8AntyFRcad9QEahsU="
 
 script:
-  - ant compile
+  - ant all
