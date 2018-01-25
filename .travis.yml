@@ -1,0 +1,15 @@
+# Using trusty because the Travis Addon for SonarQube.com requires Java 8
+dist: trusty
+sudo: required
+
+node_js:
+  - 6
+
+addons:
+  sonarcloud:
+    organization: fab
+    token:
+      secure: "foo"
+
+script:
+  - ant compile
